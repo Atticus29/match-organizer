@@ -15,4 +15,12 @@ public class Move {
   public static List<Move> all(){
     return mAllMoves;
   }
+
+  // public static Move find(){
+  //
+  // }
+
+  public static void clear(){
+    mAllMoves.clear();
+  }
 }
