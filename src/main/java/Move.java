@@ -4,5 +4,15 @@ import java.util.ArrayList;
 public class Move {
   private String mName;
   private String mPerformer;
-  private static List<Move> allMoves = new ArrayList<Move>();
+  private static List<Move> mAllMoves = new ArrayList<Move>();
+
+  public Move(String name, String performer){
+    mName = name;
+    mPerformer = performer;
+    mAllMoves.add(this);
+  }
+
+  public static List<Move> all(){
+    return mAllMoves;
+  }
 }
